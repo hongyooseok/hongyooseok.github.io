@@ -1,0 +1,179 @@
+<!-- 21561132 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yooseok</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<style media="screen">
+
+/* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width: 600px) {
+    .c_m_1 {width: 8.33%;}
+    .c_m_2 {width: 16.66%;}
+    .c_m_3 {width: 25%;}
+    .c_m_4 {width: 33.33%;}
+    .c_m_5 {width: 41.66%;}
+    .c_m_6 {width: 50%;}
+    .c_m_7 {width: 58.33%;}
+    .c_m_8 {width: 66.66%;}
+    .c_m_9 {width: 75%;}
+    .c_m_10 {width: 83.33%;}
+    .c_m_11 {width: 91.66%;}
+    .c_m_12 {width: 100%;}
+}
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+    .c_1 {width: 8.33%; }
+    .c_2 {width: 16.66%; }
+    .c_3 {width: 25%; }
+    .c_4 {width: 33.33%; }
+    .c_5 {width: 41.66%; }
+    .c_6 {width: 50%; }
+    .c_7 {width: 58.33%; }
+    .c_8 {width: 66.66%; }
+    .c_9 {width: 75%; }
+    .c_10 {width: 83.33%; }
+    .c_11 {width: 91.66%; }
+    .c_12 {width: 100%; }
+}
+
+body {
+           background-color: #ffffff;
+           background-repeat: no-repeat;
+           background-position:center top;
+           background-size: contain;
+           height: 1000px;
+       }
+
+display: inline-block;
+}
+
+.menu > li > ul.sub_menu {
+min-width: 10em;
+padding: 4px 0;
+background-color: #f4f4f4;
+border: 1px solid #fff;
+}
+
+.menu ul li { padding: 0px; }
+
+.menu > ul > li { display: inline-block; }
+
+.menu ul li a {
+display: block;
+text-decoration: none;
+color: #fff;
+font-size: 14px;
+}
+
+.menu ul li a:hover {
+background: #efa666;
+color: #fff;
+transition: all .5s ease-out;
+}
+
+.menu ul li.hover > a {
+background: #efa666;
+color: #fff;
+}
+
+.menu ul li > a { padding: 15px; }
+
+.menu ul ul {
+display: none;
+position: absolute;
+top: 100%;
+min-width: 160px;
+background: #39484d;
+}
+
+.menu ul li:hover > ul { display: block;}
+
+.menu ul ul > li { position: relative; }
+
+.menu ul ul > li a {
+padding: 10px 15px;
+height: auto;
+background: #39484d;
+}
+
+.menu ul ul > li a:hover {
+background: #efa666;
+color: #fff;
+}
+
+.menu ul ul ul {
+position: absolute;
+left: 100%;
+top: 0;
+}
+
+/* 슬라이드 */
+*{margin:0;padding:0;}
+ ul,li{list-style:none;}
+ #slide{height:1000px;overflow:hidden;}
+ #slide ul{width:400%;height:100%;transition:1s;}
+ #slide ul:after{content:"";display:block;clear:both;}
+ #slide li{float:left;width:25%;height:100%;}
+ #slide li:nth-child(1){background-image:url("slide2_1.png");background-repeat: no-repeat;}
+ #slide li:nth-child(2){background-image:url("slide2_2.png");background-repeat: no-repeat;}
+ #slide li:nth-child(3){background-image:url("slide2_3.png");background-repeat: no-repeat;}
+ #slide input{display:none;}
+ #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+ #slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+ #pos1:checked~ul{margin-left:0%;}
+ #pos2:checked~ul{margin-left:-100%;}
+ #pos3:checked~ul{margin-left:-200%;}
+ #pos1:checked~.pos>label:nth-child(1){background:#ffffff;}
+ #pos2:checked~.pos>label:nth-child(2){background:#ffffff;}
+ #pos3:checked~.pos>label:nth-child(3){background:#ffffff;}
+
+</style>
+<body>
+<!-- 네비 -->
+  <div class="nav_wrapper">
+    <nav class="menu">
+      <ul>
+        <li ><a href="index.html">menu</a>
+          <ul >
+            <li ><a href=index1.html>intro » </a>
+            </li>
+
+            <li ><a href="#Link" title="Link">portfolio » </a>
+              <ul >
+                <li ><a href="index2.html">visual communication</a></li>
+                <li ><a href="index3.html">uiux design</a></li>
+                <li ><a href="index4.html">project class</a></li>
+                <li ><a href="index5.html">web standard publishing(middle)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+    </nav>
+  </div>
+  <!-- 슬라이드 -->
+  <div id="slide">
+  <input type="radio" name="pos" id="pos1" checked>
+  <input type="radio" name="pos" id="pos2">
+  <input type="radio" name="pos" id="pos3">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <p class="pos">
+    <label for="pos1"></label>
+    <label for="pos2"></label>
+    <label for="pos3"></label>
+  </p>
+
+
+
+</div>
+  </body>
+  </html>
